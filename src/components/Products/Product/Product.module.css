@@ -1,0 +1,16 @@
+.product {
+    max-width: 1200px;
+}
+
+.product > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.btn {
+    cursor: pointer;
+}

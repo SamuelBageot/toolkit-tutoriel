@@ -1,0 +1,50 @@
+.navbar {
+    background-color: lightblue;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right > *:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+}
+
+.list a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    transition: all .3s;
+}
+
+.list a:hover {
+    color: rgb(185, 45, 45);
+}
+
+.list > li:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+.cart {
+    font-size: 1.2rem;
+}
+
+.userImg {
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.btn {
+    cursor: pointer;
+}

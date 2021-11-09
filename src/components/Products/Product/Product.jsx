@@ -26,7 +26,9 @@ const Product = () => {
 
     if (loading) {
         return (
-            <div>Loading...</div>
+            <div>
+                <h1>Loading...</h1>
+            </div>
         )
     } else {
         const { title, price, description, image } = product;

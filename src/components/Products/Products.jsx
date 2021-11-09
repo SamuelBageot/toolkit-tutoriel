@@ -12,7 +12,6 @@ const Products = () => {
             setLoading(true);
             const response = await fetch('https://fakestoreapi.com/products/');
             const data = await response.json();
-            console.log(data);
             setProducts(data);
             setLoading(false);
         };
@@ -30,16 +29,16 @@ const Products = () => {
     return (
         <div className={classes.products}>
             {products.map(product => {
-                const { id, title, price, description, image } = product;
+                const { id, title, image } = product;
                 return (
-                    <>
+                    <div key={id}>
                         <Link to={`/${id}`}>
-                            <article key={id} className={classes.productCard}>
+                            <article className={classes.productCard}>
                                 <h2>{title.slice(0, 20)}...</h2>
                                 <img className={classes.img} src={image} alt={title} />
                             </article>
                         </Link>
-                    </>
+                    </div>
                 )
             })}
         </div>

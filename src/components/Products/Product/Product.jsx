@@ -18,7 +18,7 @@ const Product = () => {
             setLoading(false);
         };
         fetchProduct();
-    }, []);
+    }, [productId]);
 
     const addItemHandler = () => {
         // AddItemToCart code
